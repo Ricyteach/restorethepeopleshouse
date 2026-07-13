@@ -1,0 +1,364 @@
+/* Restore the People's House
+   Serious, civic, typography-led. Warm paper and ink neutrals with one
+   deep-green accent; deliberately no red and no blue anywhere.
+   To retune the look, edit the variables below. */
+
+:root {
+  --paper: #f7f3ea;        /* page background */
+  --paper-deep: #efe9db;   /* slightly darker paper for panels */
+  --ink: #221e16;          /* headings, primary text */
+  --ink-soft: #433d31;     /* body text */
+  --muted: #6f6754;        /* secondary text */
+  --line: #ddd4c1;         /* hairline rules */
+  --accent: #35594a;       /* the single accent: deep civic green */
+  --accent-strong: #27473a;
+  --footer-ink: #1d1a13;
+  --footer-text: #e6dfcf;
+  --footer-muted: #b3a98e;
+  --measure: 41rem;        /* ~70 characters at body size */
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("fonts/SourceSerif4-Roman-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("fonts/SourceSerif4-Italic-latin.woff2") format("woff2");
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-family: "Source Serif 4", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  font-size: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  line-height: 1.68;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: #cfdcd2; color: var(--ink); }
+
+p { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+strong { color: var(--ink); font-weight: 640; }
+
+a { color: var(--accent-strong); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--accent); }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.6rem 1rem;
+  z-index: 10;
+}
+.skip-link:focus { left: 0.5rem; top: 0.5rem; }
+
+/* ---------- Hero ---------- */
+
+.hero {
+  text-align: center;
+  padding: clamp(3.25rem, 9vw, 5.5rem) 1.25rem 0;
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.pediment {
+  width: 92px;
+  height: auto;
+  color: var(--accent);
+  opacity: 0.75;
+}
+
+.hero h1 {
+  margin: 1.4rem 0 0;
+  color: var(--ink);
+  font-size: clamp(2.35rem, 4.5vw + 1.1rem, 3.6rem);
+  font-weight: 615;
+  line-height: 1.06;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.tagline {
+  margin: 1.3rem auto 0;
+  max-width: 34rem;
+  color: var(--accent-strong);
+  font-size: clamp(1.08rem, 1rem + 0.4vw, 1.28rem);
+  font-weight: 480;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+.hero-statement {
+  max-width: var(--measure);
+  margin: 2.75rem auto 0;
+  padding-top: 2.25rem;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+
+/* ---------- Tiers and accordion ---------- */
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.tier { margin-top: clamp(3rem, 7vw, 4.25rem); }
+
+.tier-kicker {
+  margin: 0 0 0.35rem;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 660;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.tier-head h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.55rem, 1.2rem + 1.4vw, 2rem);
+  font-weight: 640;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.tier-intro {
+  margin: 0.55rem 0 1.4rem;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.tier-items { border-bottom: 1px solid var(--line); }
+
+.item {
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 1.25rem;
+}
+
+.item-heading { margin: 0; }
+
+.item-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.05rem 0.15rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  color: var(--ink);
+  font-size: 1.07rem;
+  font-weight: 590;
+  line-height: 1.35;
+}
+.item-toggle:hover .item-title { color: var(--accent-strong); }
+
+/* plus sign that becomes a minus when open */
+.item-icon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 0.85rem;
+  height: 0.85rem;
+  color: var(--accent);
+}
+.item-icon::before,
+.item-icon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  background: currentColor;
+}
+.item-icon::before { width: 100%; height: 2px; }
+.item-icon::after { width: 2px; height: 100%; transition: transform 0.25s ease; }
+.item.open .item-icon::after { transform: scaleY(0); }
+
+.item-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+.item-panel-inner {
+  overflow: hidden;
+  visibility: hidden;
+  transition: visibility 0.3s;
+}
+.item.open .item-panel { grid-template-rows: 1fr; }
+.item.open .item-panel-inner { visibility: visible; }
+
+.item-panel-inner > p:first-child { margin-top: 0.15rem; }
+.item-panel-inner {
+  font-size: 1.015rem;
+}
+.item-panel-inner > p:last-of-type { margin-bottom: 0; }
+
+.copy-row { margin: 1.15rem 0 1.35rem; }
+
+.copy-link {
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 560;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--paper-deep);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.32rem 0.85rem;
+  cursor: pointer;
+}
+.copy-link:hover { color: var(--accent-strong); border-color: var(--accent); }
+.copy-link.copied { color: var(--accent-strong); border-color: var(--accent); }
+
+/* ---------- Essay link ---------- */
+
+.essay-cta {
+  margin: clamp(3.5rem, 8vw, 5rem) 0 0;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  padding-top: clamp(2.5rem, 6vw, 3.5rem);
+}
+
+.essay-link {
+  display: inline-block;
+  background: var(--accent-strong);
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 1.02rem;
+  font-weight: 570;
+  letter-spacing: 0.02em;
+  padding: 0.85rem 1.9rem;
+  border-radius: 2px;
+}
+.essay-link:hover { background: var(--accent); color: var(--paper); }
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  margin-top: clamp(3.5rem, 8vw, 5rem);
+  background: var(--footer-ink);
+  color: var(--footer-text);
+  padding: clamp(2.5rem, 6vw, 3.5rem) 1.25rem clamp(3rem, 7vw, 4rem);
+}
+
+.footer-inner { max-width: var(--measure); margin: 0 auto; }
+
+.site-footer h2 {
+  margin: 0 0 0.9rem;
+  color: var(--footer-muted);
+  font-size: 0.8rem;
+  font-weight: 640;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.site-footer p { color: var(--footer-text); }
+.site-footer a { color: var(--footer-text); }
+.site-footer a:hover { color: #fff; }
+.site-footer :focus-visible { outline-color: var(--footer-text); }
+
+.footer-back { margin-top: 1.75rem; }
+
+/* ---------- Essay page ---------- */
+
+.essay-header {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 7vw, 4rem) 1.25rem 0;
+  text-align: center;
+}
+
+.crumb {
+  margin: 0 0 2.25rem;
+  font-size: 0.82rem;
+  font-weight: 580;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.crumb a { text-decoration: none; color: var(--muted); }
+.crumb a:hover { color: var(--accent-strong); }
+
+.essay-header h1 {
+  margin: 1.4rem 0 0;
+  color: var(--ink);
+  font-size: clamp(2rem, 3.6vw + 1rem, 3rem);
+  font-weight: 615;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.essay-header .subtitle {
+  margin: 0.9rem 0 0;
+  color: var(--accent-strong);
+  font-size: 1.15rem;
+  font-weight: 480;
+}
+
+.preface {
+  max-width: 36rem;
+  margin: 2.25rem auto 0;
+  padding-top: 1.9rem;
+  border-top: 1px solid var(--line);
+  text-align: left;
+  color: var(--muted);
+}
+
+.essay-body { padding-bottom: 1rem; }
+
+.chapter { scroll-margin-top: 1.25rem; }
+
+.chapter h2 {
+  margin: clamp(2.75rem, 6vw, 3.75rem) 0 1.1rem;
+  color: var(--ink);
+  font-size: clamp(1.45rem, 1.15rem + 1.2vw, 1.8rem);
+  font-weight: 640;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.chapter-num { color: var(--accent); }
+
+/* ---------- Motion and print ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+
+@media print {
+  .item-panel { grid-template-rows: 1fr; }
+  .item-panel-inner { visibility: visible; }
+  .copy-row, .item-icon, .skip-link { display: none; }
+  .site-footer { background: none; color: var(--ink-soft); }
+  .site-footer h2, .site-footer p { color: var(--ink-soft); }
+}
