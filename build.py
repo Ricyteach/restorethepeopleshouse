@@ -472,6 +472,13 @@ def main():
     shutil.copytree(SRC / "fonts", DIST / "assets" / "fonts")
     (DIST / ".nojekyll").write_text("", encoding="utf-8")
 
+    # If a custom domain is configured (repo-root CNAME file), copy it into
+    # dist/ so GitHub Pages keeps the domain instead of clearing it on the
+    # next Actions deploy. No CNAME file here just means no custom domain.
+    cname = ROOT / "CNAME"
+    if cname.exists():
+        shutil.copy(cname, DIST / "CNAME")
+
     print("Built dist/ with %d accordion sections across %d tiers, plus the essay page." % (total, len(tiers)))
     print("Hygiene check passed: no em/en dashes, no curly quotes, no single-quote delimiters.")
     slug_list = [(SLUGS[s["heading"]], s["heading"]) for t in tiers for s in t["sections"]]

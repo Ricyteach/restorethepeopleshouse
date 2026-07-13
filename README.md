@@ -65,14 +65,28 @@ One-time setup:
 2. Push this folder to the repository (branch `main`).
 3. In the repository on github.com: Settings > Pages > Build and deployment >
    Source: select **GitHub Actions**.
+4. Also check Settings > Environments > github-pages > Deployment branches
+   and tags. GitHub sometimes creates this environment with a restriction
+   that blocks `main`; if the first deploy fails with "Branch main is not
+   allowed to deploy," add `main` to the allowed branches there (or set it
+   to "No restriction") and re-run the failed job.
 
 That is the whole setup. From then on, every push to `main` builds the site
 (including the hygiene and order checks) and publishes it. You can even edit
 a content file directly on github.com in the browser; committing the edit
 deploys it. Nothing needs to be installed anywhere.
 
-A custom domain can be added later under Settings > Pages > Custom domain;
-the site uses relative paths throughout, so no code changes are needed.
+### Custom domain
+
+This site is configured for **restorethepeopleshouse.org**, set in the
+`CNAME` file at the repo root. `build.py` copies that file into `dist/` on
+every build. This matters because GitHub Pages deployed via Actions reads
+the custom domain from the published artifact: without a `CNAME` file in
+`dist/`, GitHub would silently clear the custom domain setting on the next
+deploy. To change the domain, edit the `CNAME` file (one line, the domain
+name, nothing else) and update the setting under Settings > Pages > Custom
+domain to match. To drop the custom domain entirely, delete the `CNAME`
+file and clear the setting on github.com.
 
 ## Deep-link slugs
 
