@@ -25,6 +25,10 @@ jobs:
       # build.py also runs the typography hygiene check and the
       # CONTENT_GUIDE.md order check; if either fails, nothing deploys.
       - run: python build.py
+      # check-content.py enforces the writing rules (the language rules from
+      # the Taut Engineering site, adapted per CONTENT_GUIDE.md). A finding
+      # fails the job, so nothing that breaks a writing rule can deploy.
+      - run: python check-content.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

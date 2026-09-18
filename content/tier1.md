@@ -12,7 +12,7 @@ At the founding, each House member represented about 30,000 people. Madison cons
 
 At that scale, representation is a legal fiction. Your rep cannot know the district, and the people who do have their ear (donors, party leadership, lobbyists, bookers) fill the space you were supposed to occupy. When you sense that voting every two years for one of two pre-screened candidates in a pre-decided district is not really representation, you are not being cynical. You are describing the system accurately.
 
-The repair this site proposes has two parts. Shrink districts back to 50,000 people, so a representative can actually know the place. And give every voter a portable vote: the ability to move the weight of your vote to any representative in your state, at any time, if your own stops earning it. Your rep would need you, continuously, not just in even-numbered Novembers.
+The repair this site proposes has two parts. Shrink districts back to 50,000 people, so a representative can actually know the place. And give every voter a portable vote: the ability to move the weight of your vote to any representative in your state, at any time, if your own stops earning it. Your rep would need you continuously, through every month of the term.
 
 The full mechanics are in "The whole proposal in 90 seconds."
 
@@ -36,11 +36,11 @@ This one follows from the mechanism almost arithmetically, which is why it may b
 
 Banning members of Congress from trading stocks polls above 75 percent in both parties. It never moves. Term limits poll above 80. Never move. Drug pricing, tech antitrust, privacy law: durable bipartisan supermajorities in the country, durable failure in the building.
 
-The reason is structural, not moral. Within each party, a small set of factions (donors, primary-dominant ideological wings, organized lobbies, leadership protecting members from hard votes) holds veto power that has nothing to do with popular support. A bill the country would pass 70-30 dies because a sliver of the majority caucus declines to let it reach the floor. The many lose to the coordinated few, every time, because the levers of the institution reward coordination.
+The reason is structural rather than moral. Within each party, a small set of factions (donors, primary-dominant ideological wings, organized lobbies, leadership protecting members from hard votes) holds veto power that has nothing to do with popular support. A bill the country would pass 70-30 dies because a sliver of the majority caucus declines to let it reach the floor. The many lose to the coordinated few, every time, because the levers of the institution reward coordination.
 
 Under the proposal, a representative who champions one of these orphaned issues becomes a magnet. Voters across the state who want it, from both parties, can move their portable votes to that champion. If the same thing happens in other states (and for genuinely popular issues, it plausibly would), a cross-party, cross-state coalition assembles itself with no organizer, no PAC, and no permission from leadership. Its floor weight is real, visible, and hard to bottle up.
 
-An honest caveat: this depends on enough voters actually moving their votes, which is a behavioral prediction, not a certainty. The case for why it works even at low participation is in "If most voters never touch it, how does it do anything?"
+An honest caveat: this depends on enough voters actually moving their votes, which is a behavioral prediction. The case for why it works even at low participation is in "If most voters never touch it, how does it do anything?"
 
 ---
 
@@ -50,7 +50,7 @@ Because nothing you do between elections affects them.
 
 The open secret of Congress is where the time goes: fundraising calls, donor events, leadership obligations, national media. Credible estimates put fundraising alone at 30 to 70 percent of a member's working hours. District contact is mostly staged and staff-run, because it is mostly optional. In a safe seat, a member can coast for 22 of every 24 months at no cost whatsoever.
 
-The portable vote makes district neglect expensive. If your constituents can shift their weight to a neighboring representative any Tuesday they choose, then presence, responsiveness, and visible effort become the job, not a photo op. A member who coasts bleeds weight month by month, publicly and measurably, while the colleague two districts over who actually shows up gains it. The incentive to be in the district, listening, becomes continuous rather than biennial.
+The portable vote makes district neglect expensive. If your constituents can shift their weight to a neighboring representative any Tuesday they choose, then presence, responsiveness, and visible effort become the job itself. A member who coasts bleeds weight month by month, publicly and measurably, while the colleague two districts over who actually shows up gains it. The incentive to be in the district, listening, becomes continuous rather than biennial.
 
 Pair that with districts of 50,000, small enough to actually know, cheap enough to campaign in without a donor treadmill, and the job starts selecting for a different kind of person. More on that in "The job becomes doable by normal people."
 

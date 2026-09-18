@@ -8,11 +8,11 @@ Tier intro line: The hard objections, answered straight, including the ones with
 
 This is the sharpest objection to the whole proposal, and it deserves the fullest answer on this site. The demagogue section leans on the fact that 85 to 90 percent of voters will likely never move their proxy. So how can the same inertia coexist with all the promised benefits?
 
-Because the objection smuggles in a false premise: that political effects scale with participation. They never have. Politics is moved by margins, not medians. Ask what disciplines members of Congress today: primary electorates of 15 to 25 percent, donors amounting to low single digits of the population, activists who are a rounding error. Politicians already orient entire careers around minorities far smaller than 10 percent. The question was never whether a minority would hold the marginal power. It is only ever which minority. This proposal replaces the current marginal force (donors and primary ideologues, unrepresentative and money-weighted) with the engaged 10 to 15 percent of general-election voters: 15 to 20 million people nationally, vastly larger and more representative than what it displaces. That substitution is most of the reform, even if participation never rises.
+Because the objection smuggles in a false premise: that political effects scale with participation. They never have. Politics is moved at the margins. Ask what disciplines members of Congress today: primary electorates of 15 to 25 percent, donors amounting to low single digits of the population, activists who are a rounding error. Politicians already orient entire careers around minorities far smaller than 10 percent. The question was never whether a minority would hold the marginal power. It is only ever which minority. This proposal replaces the current marginal force (donors and primary ideologues, unrepresentative and money-weighted) with the engaged 10 to 15 percent of general-election voters: 15 to 20 million people nationally, vastly larger and more representative than what it displaces. That substitution is most of the reform, even if participation never rises.
 
 Second, deterrence does not require firing the weapon. Most incumbents never lose a primary, yet primary threats discipline every member every day. A bank does not need most depositors to withdraw before it fears a run. Members behave differently because weight could move, publicly, this week, and the 90 percent who never touch the system inherit the benefits of the discipline, the way passive investors inherit prices set by the few who trade.
 
-Third, low participation makes the signal better, not worse. Precisely because the default is sticky, every movement is a deliberate act by a real constituent, which makes drift in the numbers high-grade information no poll can match. Thin markets still find prices.
+Third, low participation makes the signal better. Precisely because the default is sticky, every movement is a deliberate act by a real constituent, which makes drift in the numbers high-grade information no poll can match. Thin markets still find prices.
 
 Fourth, the resting rate is not the relevant rate. Participation is event-driven: scandals, betrayals, hot issues produce surges among exactly the affected voters at exactly the moment accountability matters. Ten percent of California is over two million people; concentrated by an issue, that is enough weight to move the floor.
 
@@ -22,11 +22,11 @@ And a concession that strengthens rather than weakens the case: roughly half thi
 
 ### Won't real-time pressure kill political courage?
 
-This is the most serious objection from the other direction, and it should be stated at full strength. The classic defense of representative government, Burke's, is that a representative owes constituents judgment, not obedience: sometimes the right vote is the hated vote, and the two-year buffer before facing the voters is what makes courage survivable. TARP passed in 2008 because members could vote for something loathed and let events vindicate them. Under real-time weighting, would that vote even be castable? The member watches their own power drain during the roll call.
+This is the most serious objection from the other direction, and it should be stated at full strength. The classic defense of representative government, Burke's, is that a representative owes constituents judgment: sometimes the right vote is the hated vote, and the two-year buffer before facing the voters is what makes courage survivable. TARP passed in 2008 because members could vote for something loathed and let events vindicate them. Under real-time weighting, would that vote even be castable? The member watches their own power drain during the roll call.
 
 Three answers, in increasing strength.
 
-First, the buffer is reduced, not removed. The seat is still decided only by the district's regular election on the ordinary two-year clock. Weight loss is painful but recoverable; losing office is neither. A member casting the courageous vote risks months of diminished floor power, not their career, and if events vindicate them, the weight returns, visibly, before the election. Arguably that is a better bargain than today's, where the punishment for courage arrives all at once at a primary, with no path back.
+First, the buffer is reduced. The seat is still decided only by the district's regular election on the ordinary two-year clock. Weight loss is painful but recoverable; losing office is neither. A member casting the courageous vote risks months of diminished floor power, and if events vindicate them, the weight returns, visibly, before the election. Arguably that is a better bargain than today's, where the punishment for courage arrives all at once at a primary, with no path back.
 
 Second, the mechanism rewards courage in the one way the current system cannot: quickly. Today a brave vote earns nothing but risk; vindication, if it comes, arrives after the member has already survived or lost a primary over it. Under the proposal, a member who casts the hard vote and then makes the case, in town halls and on the record, can watch persuasion register as recovered and even increased weight within weeks. Courage plus explanation becomes a viable strategy for the first time.
 
@@ -40,11 +40,11 @@ The right instinct, and here is the honest shape of the risk.
 
 First, what this is not: it is not online voting for office. Elections stay on paper, with recounts and observers. The portable vote operates downstream of elections and never decides who holds a seat. That single design choice removes the worst-case scenarios that make internet voting rightly feared.
 
-Second, the identity problem is the same one the IRS, the Social Security Administration, and the VA already solve for higher-stakes transactions daily. Not trivially, not perfectly, but routinely, and this system can use tools that ballot secrecy forbids elections from using: full audit logs, pattern detection, reversibility, and the ability of any voter to check and correct their own assignment at any time. A fraudulent reassignment, unlike a fraudulent ballot, is detectable and reversible by its victim.
+Second, the identity problem is the same one the IRS, the Social Security Administration, and the VA already solve for higher-stakes transactions daily. They do it routinely, though neither trivially nor perfectly, and this system can use tools that ballot secrecy forbids elections from using: full audit logs, pattern detection, reversibility, and the ability of any voter to check and correct their own assignment at any time. A fraudulent reassignment, unlike a fraudulent ballot, is detectable and reversible by its victim.
 
 Third, coercion, the harder problem. An abusive spouse or controlling employer could demand a proxy assignment. Here the design does real work: assignments are private, changeable in thirty seconds from any device, and carry no receipt anyone can demand. A coerced voter can comply on Sunday and quietly reverse it on Monday. Durable coercion requires durable surveillance, which is far harder against a continuously reversible act than against a one-shot ballot. Not impossible, and pretending otherwise would be dishonest, but structurally harder than coercing the votes we cast today.
 
-The fair summary: the attack surface is real, the threat model is genuinely more favorable than election security, and the residual risk is a cost to be engineered down, weighed against the system's benefits, not a disqualifier discovered.
+The fair summary: the attack surface is real, the threat model is genuinely more favorable than election security, and the residual risk is a cost to be engineered down and weighed against the system's benefits.
 
 ---
 
@@ -54,9 +54,9 @@ No, and the distinction is worth being precise about, because it comes up immedi
 
 The one person, one vote doctrine (Reynolds v. Sims and its line) requires that each voter carry equal influence: districts of equal population, no voter counting for more than another. The portable vote preserves this exactly. Every voter holds precisely one vote of precisely equal weight; the only thing that changes is which representative wields it this month. If anything the proposal repairs the doctrine's practical violations, since a gerrymandered voter today has equal weight on paper and near-zero influence in fact, while under the proposal their weight goes somewhere it counts.
 
-The genuinely open legal question sits elsewhere: whether weighted floor voting in the House squares with Article I. The Constitution's text does not command equal member votes, but 230 years of unbroken practice do, and courts weigh practice heavily. The candid assessment: the portable-vote mechanism likely requires its own constitutional amendment rather than a statute, and this site assumes the harder path rather than pretending to a shortcut. Notably, the expansion half needs no amendment at all: the House's size is set by the 1929 statute, and Congress could grow it tomorrow by simple law.
+The genuinely open legal question sits elsewhere: whether weighted floor voting in the House squares with Article I. The Constitution's text does not command equal member votes, but 230 years of unbroken practice do, and courts weigh practice heavily. The candid assessment: the portable-vote mechanism likely requires its own constitutional amendment rather than a statute, and this site assumes the harder path rather than pretending to a shortcut. The expansion half needs no amendment at all: the House's size is set by the 1929 statute, and Congress could grow it tomorrow by simple law.
 
-One more distinction worth arming yourself with: weighted voting among representatives, based on voters freely choosing whom to empower, is the opposite of the historical weighted-franchise schemes where some citizens' ballots counted more. Here every citizen's ballot counts identically. It is the representatives whose power varies, and it varies precisely according to equal citizens' equal choices.
+One more distinction worth arming yourself with: weighted voting among representatives, based on voters freely choosing who speaks for them, is the opposite of the historical weighted-franchise schemes where some citizens' ballots counted more. Here every citizen's ballot counts identically. It is the representatives whose power varies, and it varies precisely according to equal citizens' equal choices.
 
 ---
 
@@ -66,9 +66,9 @@ The objection pictures 6,500 people trying to hold a conversation. Real legislat
 
 For calibration: the UK Commons has 650 members and famously fewer chamber seats than members. The European Parliament runs 720 members across 24 languages. India's Lok Sabha legislates for 1.4 billion people. Nothing about 6,500 breaks the committee model; it extends it, with hundreds of specialized subcommittees achieving actual expertise instead of today's members spread across topics a mile wide and an inch deep. There is a respectable argument that 435 is close to the worst of both worlds: too many for genuine deliberation, too few for genuine specialization.
 
-Logistics are budget lines, not obstacles: a larger chamber for rare full assemblies, office space, electronic voting that already tallies in seconds regardless of headcount. The procedural firewall matters here too: because committee and rules votes stay one member, one vote, the institution's machinery is untouched by proxy weights, and the House's existing procedures carry over largely intact.
+Logistics are budget lines: a larger chamber for rare full assemblies, office space, electronic voting that already tallies in seconds regardless of headcount. The procedural firewall matters here too: because committee and rules votes stay one member, one vote, the institution's machinery is untouched by proxy weights, and the House's existing procedures carry over largely intact.
 
-The honest unknown is not mechanics but culture: how coalition-building, leadership, and norms evolve in a body this size is genuinely untested, and anyone claiming certainty is selling something. What can be said is that the failure modes of the current size are not hypothetical. They are the subject of every other section on this site.
+The honest unknown is culture: how coalition-building, leadership, and norms evolve in a body this size is genuinely untested, and anyone claiming certainty is selling something. What can be said is that the failure modes of the current size are not hypothetical. They are the subject of every other section on this site.
 
 ---
 
@@ -78,7 +78,7 @@ Roughly 5 to 8 billion dollars a year, all in: salaries, staff, offices, securit
 
 The relevant frame is return on oversight. This body supervises 7 trillion dollars in annual spending. If better-staffed, harder-to-capture, more specialized oversight improved federal spending efficiency by even one percent, the reform pays for itself ten times over annually. No serious analysis of congressional capacity concludes the current House is adequately staffed for what it supervises; most conclude the opposite, and that the capacity gap is itself a source of waste, since an overwhelmed Congress delegates to agencies and lobbyist-drafted text.
 
-For those whose instinct is that more politicians is self-evidently worse: the cost of politicians is not their salaries. It is what they do, and what they fail to stop. The current 435 preside over the very spending trajectory that makes 6 billion look large. A cheap legislature that cannot supervise an expensive government is the most expensive arrangement there is.
+For those whose instinct is that more politicians is self-evidently worse: the cost of politicians lies in what they do, and in what they fail to stop. The current 435 preside over the very spending trajectory that makes 6 billion look large. A cheap legislature that cannot supervise an expensive government is the most expensive arrangement there is.
 
 ---
 
@@ -96,7 +96,7 @@ Every proposal on this site has been argued honestly, but arguments for are stil
 
 **Transition turbulence.** Going from 435 to 6,500 remaps every district, seniority ladder, and committee structure at once. Even a phased version would be the largest single change to the House since 1789, and large transitions have casualties no one planned.
 
-Why proceed despite all of it? Because the status quo's failure modes are not hypothetical. Capture, gerrymandering, unaccountability, and factional veto are observed, daily, at full scale, and every year of the current system is another year of them compounding. The choice is not between a proven system and a risky one. It is between known, worsening failures and designed, bounded, pilotable risks. Engineering judgment says you do not keep operating a structure past its load rating because the replacement design has not been load-tested. You test the replacement, and you start now.
+Why proceed despite all of it? Because the status quo's failure modes are not hypothetical. Capture, gerrymandering, unaccountability, and factional veto are observed, daily, at full scale, and every year of the current system is another year of them compounding. The choice lies between known, worsening failures and designed, bounded, pilotable risks. Engineering judgment says you do not keep operating a structure past its load rating because the replacement design has not been load-tested. You test the replacement, and you start now.
 
 ---
 

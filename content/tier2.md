@@ -28,9 +28,9 @@ You log in and see your state's House delegation. By default your weight sits wi
 
 If you are not content, you tap another representative's name, confirm, and you are done. Thirty seconds. Your weight now backs someone in your state who you believe actually represents you. Change your mind next month and move it back, or elsewhere. Every two years, when a new Congress is seated, everything resets to the newly elected defaults.
 
-Three constraints keep it stable. Your weight can only go to representatives from your own state, so no national figure can harvest the whole country. Your weight is always exactly one vote, equal to everyone else's; only its holder changes, never its size. And procedural votes are untouched: proxy weight moves legislation, not gavels.
+Three constraints keep it stable. Your weight can only go to representatives from your own state, so no national figure can harvest the whole country. Your weight is always exactly one vote, equal to everyone else's; only its holder changes, never its size. And procedural votes are untouched: proxy weight moves legislation alone.
 
-Notice what this is not. It is not online voting for office (your district election stays exactly as it is, paper ballots and all). It is not voting on bills (you never vote on legislation; you choose which elected legislator speaks for you). It is a continuously updatable answer to one question: which of my state's representatives do I trust with my voice right now?
+Two things this rules out. It does not create online voting for office (your district election stays exactly as it is, paper ballots and all). It does not let you vote on bills (you never vote on legislation; you choose which elected legislator speaks for you). What it does create is a continuously updatable answer to one question: which of my state's representatives do I trust with my voice right now?
 
 ---
 
@@ -38,7 +38,7 @@ Notice what this is not. It is not online voting for office (your district elect
 
 Nearly everything, and this is by design rather than timidity.
 
-The Senate does not change: six-year terms, two per state, cloture, every supermajority threshold. This matters more than any other single fact on this site. The Founders built the Senate specifically to cool whatever a hot, responsive House sends over. Today neither chamber plays its intended role; the House is too distant to be responsive and the Senate has little responsiveness to cool. Under the proposal, a genuinely responsive House meets a genuinely deliberate Senate, which is not a radical arrangement. It is bicameralism finally operating as designed.
+The Senate does not change: six-year terms, two per state, cloture, every supermajority threshold. This matters more than any other single fact on this site. The Founders built the Senate specifically to cool whatever a hot, responsive House sends over. Today neither chamber plays its intended role; the House is too distant to be responsive and the Senate has little responsiveness to cool. Under the proposal, a genuinely responsive House meets a genuinely deliberate Senate. That is bicameralism finally operating as designed.
 
 The presidential veto does not change. Judicial review does not change. Federalism and the states' powers do not change. The Bill of Rights does not change.
 
@@ -70,11 +70,11 @@ Start with inertia. Roughly half of registered voters turn out for midterms; pri
 
 Add the state cap. A demagogue in California cannot collect a single proxy from Texas. Each state's pool is closed.
 
-Now run a deliberately generous scenario. Suppose a genuinely national phenomenon, based in California, captures the loyalty of a million actively engaged Californians. In a delegation of roughly 780 members, that yields a floor weight somewhere in the neighborhood of 20 to 40 times a normal member. It sounds enormous until you place it: 40x in a 6,500-member House is about 0.6 percent of total floor power, held revocably, in public, and stripped of procedural leverage by the firewall. For comparison, a committee chair today wields far more concentrated power than that, acquired by seniority rather than by persuading a million citizens to actively confer it. The Senate, unchanged, still stands between any House passion and the statute books.
+Now run a deliberately generous scenario. Suppose a genuinely national phenomenon, based in California, captures the loyalty of a million actively engaged Californians. In a delegation of roughly 780 members, that yields a floor weight somewhere in the neighborhood of 20 to 40 times a normal member. It sounds enormous until you place it: 40x in a 6,500-member House is about 0.6 percent of total floor power, held revocably, in public, and stripped of procedural power by the firewall. For comparison, a committee chair today wields far more concentrated power than that, acquired by seniority rather than by persuading a million citizens to actively confer it. The Senate, unchanged, still stands between any House passion and the statute books.
 
 Then notice what the mechanism does that the current system cannot: it prices the demagogue. Today, apparent power is claimed through follower counts and cable hits, and no one can check the claim. Under the proposal, the claim gets tested continuously. A figure whose noise converts into proxies holds real, earned, visible power in modest proportion. A figure whose noise does not convert is exposed, numerically, every day. Demagogues exist now; the proposal does not create them. It audits them.
 
-The honest residual: these are scenario numbers, not simulations, and the true participation rate is unknowable in advance. What can be said is that every guardrail (default inertia, state cap, two-year reset, procedural firewall, the Senate) binds harder as the scenario gets more extreme.
+The honest residual: these are scenario numbers worked by hand, and the true participation rate is unknowable in advance. What can be said is that every guardrail (default inertia, state cap, two-year reset, procedural firewall, the Senate) binds harder as the scenario gets more extreme.
 
 ---
 
@@ -90,7 +90,7 @@ A concrete tour. California, one two-year Congress, under the proposal.
 
 **Month nine.** The congressional stock-trading ban, bottled up for a decade, finds champions: a Sacramento Democrat and a San Diego Republican, independently. Voters from both parties move weight to both. Comparable champions emerge in Texas, Ohio, Florida. The accumulated cross-party floor weight forces the bill out of committee through a discharge petition. It passes the House. The Senate, unchanged and unhurried, takes it up on its own terms, which is precisely the sequence bicameralism was designed to produce.
 
-**Month eighteen.** Serious, verifiable executive misconduct surfaces. Members of the president's party face a novel calculus: shielding him now has a visible, real-time price, as their own constituents move weight away, member by member, on the record. The eventual House vote is not a party headcount. It is a weighted reading of what the country actually concluded.
+**Month eighteen.** Serious, verifiable executive misconduct surfaces. Members of the president's party face a novel calculus: shielding him now has a visible, real-time price, as their own constituents move weight away, member by member, on the record. The eventual House vote becomes a weighted reading of what the country actually concluded.
 
 **Month twenty-four.** New election, everything resets, and every member spent the entire term knowing their power was rented from the people who could see the meter.
 

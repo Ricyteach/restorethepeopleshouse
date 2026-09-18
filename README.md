@@ -14,6 +14,7 @@ Python (any 3.9+), which is already on this machine.
 | `content/essay.md` | The long-form essay page |
 | `CONTENT_GUIDE.md` | The authoritative section order and the voice rules |
 | `build.py` | Turns the markdown into the site in `dist/` (stdlib only) |
+| `check-content.py` | Enforces the writing rules (stdlib only) |
 | `src/style.css`, `src/site.js`, `src/favicon.svg`, `src/fonts/` | Design, behavior, assets |
 | `.github/workflows/deploy.yml` | Builds and publishes to GitHub Pages on every push |
 
@@ -39,6 +40,19 @@ on every build and is not committed.
 The build enforces the typography rules: if an em dash, en dash, curly quote,
 or a single quote used as a quote delimiter appears anywhere in the rendered
 pages, the build fails and shows you where. A failed build never deploys.
+
+A second script enforces the writing rules shared with the Taut Engineering
+site (no "X, not Y" constructions, no large language model tics, very few
+metaphors):
+
+```
+python check-content.py
+```
+
+It prints FINDING lines, which fail, and note lines, which are for you to
+judge. The deploy workflow runs it after the build, so a violation blocks the
+deploy. The rules, the exceptions, and what deliberately does not carry over
+from the Taut Engineering site are documented in `CONTENT_GUIDE.md`.
 
 ## Preview locally
 

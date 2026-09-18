@@ -16,6 +16,7 @@ and FAILS the build if:
 import html
 import re
 import shutil
+import time
 import sys
 from pathlib import Path
 
@@ -461,7 +462,17 @@ def main():
              "delimiters are banned in rendered output):\n\n" + "\n".join(errors))
 
     if DIST.exists():
-        shutil.rmtree(DIST)
+        # Dropbox (and any indexer) can hold a handle on dist/ for a moment,
+        # which makes rmtree fail with a PermissionError. Retry briefly rather
+        # than making the owner run the build twice.
+        for attempt in range(6):
+            try:
+                shutil.rmtree(DIST)
+                break
+            except PermissionError:
+                if attempt == 5:
+                    fail("Could not delete dist/. Something is holding a file open in that folder (Dropbox syncing, a preview server, or an open file). Close it and run the build again.")
+                time.sleep(1)
     (DIST / "assets").mkdir(parents=True)
     for name, page in pages.items():
         with open(DIST / name, "w", encoding="utf-8", newline="\n") as f:

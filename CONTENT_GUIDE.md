@@ -67,6 +67,68 @@ These are load-bearing. The site's credibility strategy is calibrated honesty, a
 9. **Minimal repetition.** Each section carries at most a one-sentence recap of the proposal, phrased variously. Sections cross-reference each other by name (the site supports deep links) instead of re-explaining.
 10. **Rounded numbers, honest sourcing.** ~770,000 per district today; 50,000 target; roughly 6,500 members; ~12,000 registered lobbyists; $5-8B annual cost; 10-15% estimated active proxy participation, always labeled an estimate.
 
+## Writing rules shared with the Taut Engineering site
+
+The language rules from the Taut Engineering site
+(github.com/Ricyteach/ricyteach.github.io, `CLAUDE.md` language rules 1 to 10,
+with the word lists and reasoning in its `docs/ai-tics.md`) also govern this
+site. `check-content.py` enforces them, and the deploy workflow runs it, so a
+violation blocks the deploy.
+
+The rules that apply here:
+
+11. **No "X, not Y" constructions,** in any variant, including the semicolon
+    form ("is not an invention; it is the original First Amendment"), the
+    "not X but Y" form, and the version split across a sentence break ("is not
+    a party headcount. It is a weighted reading"). State what the thing is and
+    stop. Published analyses of generated text identify this contrast reframe
+    as the single most reliable tell. "Rather than" is a plain comparative and
+    stays permitted.
+12. **Very few metaphors.** Do not use these in a non-literal sense: carries,
+    holds, flags, surfaces, lands, gates, unpacks, bakes in, moves the needle,
+    table stakes, growth engine, workhorse, bottleneck.
+13. **No large language model tics.** Inflated adjectives (pivotal, seamless,
+    meticulous, indispensable), metaphorical verbs (delve, navigate, foster,
+    underscore), filler ("it is important to note", "when it comes to"), and
+    transitions no one writes by hand (moreover, furthermore, notably). The
+    enforced list is in `check-content.py`.
+14. **No slang or casual shorthand,** and no contractions in new body prose.
+
+### What does NOT carry over from the Taut Engineering site
+
+- **The first person singular voice rule.** That site is one engineer writing
+  as himself. This site is second person and rule 3 above still governs.
+- **The design system.** That site's typefaces and its navy accent belong to
+  it. This site's restrained palette with a single green accent exists to make
+  party neutrality legible, per `SITE_SPEC.md`.
+- Its rules about seals, service pages, Jekyll front matter, publish dates and
+  article length, which describe that site's structure.
+
+**Where a Taut Engineering rule and this guide disagree, this guide wins.**
+
+### Documented exceptions
+
+Two flagged passages stay, for the reasons recorded in `check-content.py`:
+
+- **"It will empower demagogues."** in `essay.md` quotes the objection word for
+  word so that it matches the section heading "Won't this empower demagogues?".
+- **"Don't waste your vote"** in `tier1.md` quotes a folk saying. Editing a
+  quotation to satisfy a style rule would misquote it.
+
+Section headings and the hero block are excluded from these rules by decision
+of the owner. The checker reports violations there as notes so they stay
+visible without failing the build. This guide and `README.md` are maintainer
+documents and are not scanned, which follows the same practice on the Taut
+Engineering site.
+
+### Running the check
+
+    python check-content.py
+
+Findings fail. Notes are for a human to judge: they cover words such as
+"holds" and "carries" that have a legitimate literal use in describing the
+mechanism, since a representative really does hold a proxy.
+
 ## Editing workflow
 
 To add a section: add a `###` heading and body to the appropriate tier file, then add it to the ordering list above. To reorder: edit the list above and move the section in the file (the build renders sections in file order). To retire a section: remove it from the file and the list. Keep this guide current; it is the source of truth the build reads for structure.
